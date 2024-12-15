@@ -16,8 +16,8 @@ header {
     font-size: 28px;
 }
 .gym-logo {
-    height: 150px; /* Reduced height for a smaller logo */
-    width: 180px; /* Maintain aspect ratio */
+    height: 150px;
+    width: 180px; 
     margin-bottom: -130px;
 
     display: block;
@@ -188,12 +188,12 @@ footer {
     position:relative;
     bottom: 0;
     width: 100%;
-    left: 0; /* Ensures footer spans across the entire width */
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    left: 0; 
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); 
 }
 
 footer a {
-    color: white; /* Default color for footer links */
+    color: white; 
     text-decoration: underline;
 }
 
