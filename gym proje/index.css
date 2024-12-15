@@ -11,8 +11,8 @@ header h1 {
     color: #f4a261; /* Orange header title */
 }
 .gym-logo {
-    height: 150px; /* Reduced height for a smaller logo */
-    width: 180px; /* Maintain aspect ratio */
+    height: 150px; 
+    width: 180px; 
     margin-bottom: -130px;
 
     display: block;
@@ -73,7 +73,7 @@ header {
 
 .about-title {
     background-color: rgba(0, 0, 0, 0.8);
-    color: white; /* Ensure white text for readability */
+    color: white; 
     padding: 10px;
     border-radius: 8px;
     text-align: center;
@@ -86,8 +86,8 @@ header {
 }
 
 .text-box {
-    background-color: rgba(0, 0, 0, 0.8); /* Matches the About Us title background */
-    color: white; /* Ensure white text for readability */
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -104,14 +104,13 @@ header {
 }
 /* Map Styling */
 #map {
-    width: calc(100% - 40px); /* Reduce the map width to bring it inward */
-    height: 400px; /* Same height as slideshow */
-    margin-top: 20px; /* Space between slideshow and map */
-    margin-left: auto; /* Align with padding */
+    width: calc(100% - 40px); 
+    height: 400px; 
+    margin-top: 20px; 
+    margin-left: auto; 
     margin-right: auto;
     margin-bottom: 100px;
-    border-radius: 8px; /* Match slideshow's rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    border-radius: 8px; 
 }
 
 .slideshow {
@@ -170,8 +169,8 @@ footer {
     position:fixed;
     bottom: 0;
     width: 100%;
-    left: 0; /* Ensures footer spans across the entire width */
-    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    left: 0;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); 
 }
 
 footer a {
