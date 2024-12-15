@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="gorilla.jpg" alt="Gym Logo" class="gym-logo">
+        </div>
+        <h1>MonsterFitness</h1>
+    </header>
+    <nav id="navbar">
+        <a href="index.html">Home</a>
+        <a href="membership.html">Membership</a>
+        <a href="creative.html">Plans</a>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <div class="slideshow">
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <img src="man2.jpg" alt="Gym Image 1" class="slide">
+                <img src="woman.jpg" alt="Gym Image 2" class="slide">
+                <img src="dumbells.jpg" alt="Gym Image 3" class="slide">
+                <button class="next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </div>
+        <div class="right">
+            <h2 class="about-title">About Us</h2>
+            <div class="text-box">
+                <p>Welcome to MonsterFitness! We are dedicated to providing the best fitness experience for our members.</p>
+                <p>Our gym offers state-of-the-art equipment, experienced trainers, and a supportive community. At MonsterFitness, we believe in creating an inclusive environment where everyone, from beginners to seasoned athletes, can achieve their fitness goals.</p>
+                <p>In addition to our top-notch facilities, we host regular fitness classes, personal training sessions, and community events to keep you motivated and engaged. Your health and well-being are our priority.</p>
+                <p>Come join MonsterFitness today and take the first step towards a healthier, stronger you!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Map Section -->
+    <div id="map"></div>
+
+    <footer style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+        <p style="margin: 0;">Address: <a href="https://maps.google.com/?q=123%20Fitness%20Blvd,%20Fit%20City"  target="_blank" style="color: white; ">123 Fitness Blvd, Fit City</a></p>
+        <span style="border-left: 1px solid white; height: 15px; align-self: center;"></span>
+        <p style="margin: 0;">Email: <a href="mailto:contact@monsterfitness.com" style="color: white; ">contact@monsterfitness.com</a></p>
+        <span style="border-left: 1px solid white; height: 15px; align-self: center;"></span>
+        <p style="margin: 0;">Phone: <a href="tel:+1234567890" style="color: white;">(123) 456-7890</a></p>
+    </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2xXEIxB_Dda8161ozvNVIrQERzGR1gnk&callback=initMap"></script>
+</body>
+</html>

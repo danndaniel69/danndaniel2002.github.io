@@ -1,0 +1,142 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('strength2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Header Styles */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+header h1 {
+    color: #f4a261; /* Orange header title */
+}
+.gym-logo {
+    height: 150px; /* Reduced height for a smaller logo */
+    width: 180px; /* Maintain aspect ratio */
+    margin-bottom: -130px;
+
+    display: block;
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    padding: 5px 10px; /* Adds padding for better hover effect */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+nav a:hover {
+    color: #000; /* Text turns black for contrast */
+    background-color: #f4a261; /* Background turns orange */
+}
+/* Form Container */
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #f4a261;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Input Styles */
+input, textarea, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #f4a261;
+    box-shadow: 0 0 8px rgba(244, 162, 97, 0.6);
+}
+
+/* Membership Container */
+.membership-container {
+    display: flex;
+    gap: 20px; /* Space between membership plans and comment box */
+}
+
+.membership-plans, .comment-box {
+    flex: 1; /* Equal width */
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background-color: #222;
+    transition: border-color 0.3s ease-in-out;
+}
+
+
+
+.radio-group:hover {
+    border-color: #f4a261;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.comment-box textarea {
+    width: 95%;
+    height: 150px; /* Matches the membership plans height */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    resize: none; /* Prevent resizing */
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px; 
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f4a261;
+    transform: scale(1.05);
+}

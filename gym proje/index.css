@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('grip.jpg') no-repeat center center fixed;
+    background-size: cover; 
+}
+
+header h1 {
+    color: #f4a261; /* Orange header title */
+}
+.gym-logo {
+    height: 150px; /* Reduced height for a smaller logo */
+    width: 180px; /* Maintain aspect ratio */
+    margin-bottom: -130px;
+
+    display: block;
+}
+
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Navbar Styles */
+#navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #444;
+    flex-wrap: wrap;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 5px 10px; /* Add padding for better hover effect */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions */
+}
+
+#navbar a:hover {
+    color: #000; /* Text changes to black for contrast */
+    background-color: #f4a261; /* Background turns orange */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+.about-title {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white; /* Ensure white text for readability */
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid white; /* Add white outline */
+
+}
+
+.text-box {
+    background-color: rgba(0, 0, 0, 0.8); /* Matches the About Us title background */
+    color: white; /* Ensure white text for readability */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%; /* Matches the container width */
+    max-width: 100%; /* Ensures responsiveness */
+    border: 2px solid #ccc;
+    text-align: justify; /* Neatly aligned text */
+}
+
+
+.text-box p {
+    margin: 10px 0;
+}
+/* Map Styling */
+#map {
+    width: calc(100% - 40px); /* Reduce the map width to bring it inward */
+    height: 400px; /* Same height as slideshow */
+    margin-top: 20px; /* Space between slideshow and map */
+    margin-left: auto; /* Align with padding */
+    margin-right: auto;
+    margin-bottom: 100px;
+    border-radius: 8px; /* Match slideshow's rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow */
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+button.prev {
+    left: 20px;
+}
+
+button.next {
+    right: 20px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    display: block;
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0; /* Ensures footer spans across the entire width */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+footer a {
+    color: white; /* Default color for footer links */
+    text-decoration: underline;
+    
+}
+
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    #navbar 
+    .text-box {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+
+    .container {
+        flex-direction: column;
+    }
+
+    button.prev {
+        left: 10px;
+    }
+
+    button.next {
+        right: 10px;
+    }
+}

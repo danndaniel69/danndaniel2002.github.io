@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Application</title>
+    <link rel="stylesheet" href="membership.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="gorilla.jpg" alt="Gym Logo" class="gym-logo">
+        </div>
+        <h1>Membership Application</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="membership.html">Membership</a>
+        <a href="creative.html">Plans</a>
+    </nav>
+    <div class="form-container">
+        <h2>Membership Application Form</h2>
+        <p>We offer a membership option tailored to meet your specific needs. To apply, please complete and submit the membership application form below.</p>
+        <form id="membershipForm" onsubmit="return validateForm()">
+            <div class="half-width">
+                <label for="first-name">First Name*</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="half-width">
+                <label for="last-name">Last Name*</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address">
+            <div class="half-width">
+                <input type="text" id="city" name="city" placeholder="City">
+            </div>
+            <div class="half-width">
+                <input type="text" id="state" name="state" placeholder="State">
+            </div>
+            <div class="half-width">
+                <input type="text" id="zip" name="zip" placeholder="Postal / Zip Code">
+            </div>
+            <div class="half-width">
+                <input type="text" id="country" name="country" placeholder="Country">
+            </div>
+
+            <fieldset>
+                <legend>Membership Plans*</legend>
+                <div class="membership-container">
+                    <!-- Membership Options -->
+                    <div class="membership-plans">
+                        <div class="radio-group">
+                            <input type="radio" id="standard" name="plan" value="Standard" required>
+                            <label for="standard">Standard ($200/Year)</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="silver" name="plan" value="Silver">
+                            <label for="silver">Silver ($450/Year)</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="gold" name="plan" value="Gold">
+                            <label for="gold">Gold ($600/Year)</label>
+                        </div>
+                    </div>
+                    <!-- Comment Box -->
+                    <div class="comment-box">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" rows="6"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+
+            if (!firstName || !lastName || !email || !phone) {
+                alert("Please fill out all required fields.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
+
+
+

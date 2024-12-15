@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('bar.jpg') no-repeat center center fixed;
+    background-size: cover; 
+    overflow-y: auto; 
+}
+
+header {
+    background-color: #000000;
+    color: #f4a261; 
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+}
+.gym-logo {
+    height: 150px; /* Reduced height for a smaller logo */
+    width: 180px; /* Maintain aspect ratio */
+    margin-bottom: -130px;
+
+    display: block;
+}
+
+/* Navbar Styles */
+#navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    padding: 5px 10px; /* Adds padding for better interaction */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Smooth transitions */
+}
+
+#navbar a:hover {
+    color: #000; /* Text changes to black for contrast */
+    background-color: #f4a261; /* Background turns orange */
+}
+
+/* Hero Section */
+.hero {
+    background: url('woman3.jpg') no-repeat center center/cover;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto 0; 
+    border: 2px solid white;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    color: white;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero h2, .hero p {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(244, 162, 97, 0.6);
+}
+
+.card h3 {
+    color: #e07a26;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card ul li::before {
+    content: "✓";
+    color: #f4a261;
+    font-weight: bold;
+}
+
+.card button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #555;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #f4a261;
+    color: black;
+    text-align: center;
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #ff9f40; /* Slightly brighter orange */
+    transform: scale(1.1);
+}
+
+
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    left: 0; /* Ensures footer spans across the entire width */
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+footer a {
+    color: white; /* Default color for footer links */
+    text-decoration: underline;
+}
+
+/* Keyframes for Hero Animation */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gym-logo {
+        margin: 0 auto 10px;
+    }
+}
