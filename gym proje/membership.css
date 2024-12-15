@@ -21,8 +21,8 @@ header h1 {
     color: #f4a261; /* Orange header title */
 }
 .gym-logo {
-    height: 150px; /* Reduced height for a smaller logo */
-    width: 180px; /* Maintain aspect ratio */
+    height: 150px; 
+    width: 180px; 
     margin-bottom: -130px;
 
     display: block;
@@ -72,7 +72,7 @@ input, textarea, select {
     border-radius: 5px;
     background-color: #222;
     color: white;
-    box-sizing: border-box; /* Prevents overflow */
+    box-sizing: border-box; 
 }
 
 input:focus, textarea:focus, select:focus {
@@ -83,7 +83,7 @@ input:focus, textarea:focus, select:focus {
 /* Membership Container */
 .membership-container {
     display: flex;
-    gap: 20px; /* Space between membership plans and comment box */
+    gap: 20px; 
 }
 
 .membership-plans, .comment-box {
@@ -113,7 +113,7 @@ input:focus, textarea:focus, select:focus {
 
 .comment-box textarea {
     width: 95%;
-    height: 150px; /* Matches the membership plans height */
+    height: 150px; 
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
